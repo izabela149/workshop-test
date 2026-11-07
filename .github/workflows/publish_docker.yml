@@ -30,6 +30,6 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ./c-bye
+          context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/c-bye:latest
+          tags: ghcr.io/${{ github.repository }}/test:latest
